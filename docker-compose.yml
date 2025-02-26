@@ -9,6 +9,7 @@ services:
         - 8888:8888
       volumes:
         - ./api:/app
+      command: php -S 0.0.0.0:8888 public/index.php
       restart: always
       networks:
         - rede
