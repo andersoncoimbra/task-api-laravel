@@ -9,4 +9,6 @@ class Edificio extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['nome', 'endereco'];
+
 }

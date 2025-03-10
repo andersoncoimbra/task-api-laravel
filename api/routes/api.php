@@ -2,6 +2,8 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EdificioController;
+use App\Http\Controllers\TarefaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,5 +20,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::apiResource('edificios', 'EdificioController');
-Route::apiResource('tarefas', 'TarefaController');
+Route::apiResource('edificios', EdificioController::class );
+Route::apiResource('tarefas', TarefaController::class );
+

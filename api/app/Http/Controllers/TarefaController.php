@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Tarefa;
+use App\Http\Requests\StoreTarefaRequest;
 
 class TarefaController extends Controller
 {
@@ -15,7 +16,7 @@ class TarefaController extends Controller
         return response()->json(Tarefa::all());
     }
 
-    public function store(Request $request)
+    public function store(StoreTarefaRequest $request)
     {
         $tarefa = Tarefa::create($request->all());
         return response()->json($tarefa, 201);
