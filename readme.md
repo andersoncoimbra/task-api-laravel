@@ -26,4 +26,4 @@ Sistema de tarefas
    docker compose up
 
     Aguarde ate finalizar o proceso de instalação 
-4. Acesse a url http://localhost:8080
+4. Acesse a url http://localhost:8888
