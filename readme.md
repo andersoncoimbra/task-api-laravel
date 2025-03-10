@@ -20,7 +20,7 @@ Sistema de tarefas
    git clone https://github.com/andersoncoimbra/task-api-laravel
 2. Entre no diretorio do projeto CadEletro
    ```shell
-   cd sisAssinaturas
+   cd task-api-laravel
 3. Ative os containers via docker-compose
    ```shell
    docker compose up
